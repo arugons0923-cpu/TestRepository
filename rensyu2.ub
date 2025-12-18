@@ -1,0 +1,16 @@
+@startuml
+participant MainFunctin
+
+MainFunctin -> calculate: データを計算する
+activate calculate
+
+calculate -> getInput: 入力データの要求
+activate getInput
+
+getInput --> calculate: 入力データ
+deactivate getInput
+
+calculate -> MainFunctin: 計算結果
+deactivate calculate
+
+@enduml

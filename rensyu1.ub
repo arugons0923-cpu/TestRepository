@@ -1,0 +1,6 @@
+@startuml
+Client -> Server: データ要求
+BD -> Server: 問い合わせ
+BD <-- Server: 結果
+Server --> Client: データ
+@enduml
